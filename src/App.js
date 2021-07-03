@@ -1,5 +1,11 @@
-// import data from
+// import styles
+import "./styles/app.scss";
 
+// import components
+
+import Products from "./components/Products";
+
+// import data from
 import Data from "./Data";
 
 // import useState
@@ -13,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello sku</h1>
+      <Products data={data} />
     </div>
   );
 }
