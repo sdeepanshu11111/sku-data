@@ -1,9 +1,18 @@
 const Nav = () => {
   return (
     <nav>
-      <div className="logo">
-        <h1>Sku finder</h1>
-      </div>
+      <h1>Sku Finder</h1>
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">About Us</a>
+        </li>
+        <li>
+          <a href="">Log In</a>
+        </li>
+      </ul>
     </nav>
   );
 };
