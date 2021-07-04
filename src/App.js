@@ -29,6 +29,7 @@ function App() {
       <Nav />
 
       <Products data={data} />
+      <Login />
     </div>
   );
 }
