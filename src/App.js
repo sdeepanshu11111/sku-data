@@ -1,9 +1,16 @@
 // import styles
 import "./styles/app.scss";
 
+// Material ui
+import { Button } from "@material-ui/core";
+
 // import components
 
+import Nav from "./components/Nav";
+
 import Products from "./components/Products";
+
+import Login from "./components/pages/login";
 
 // import data from
 import Data from "./Data";
@@ -19,6 +26,8 @@ function App() {
 
   return (
     <div className="App">
+      <Nav />
+
       <Products data={data} />
     </div>
   );
