@@ -4,8 +4,11 @@ import "./styles/app.scss";
 // Material ui
 import { Button } from "@material-ui/core";
 
-// import components
+// import Switch and route
 
+import { Switch, Route } from "react-router-dom";
+
+// import component
 import Nav from "./components/Nav";
 
 import Products from "./components/Products";
@@ -16,7 +19,6 @@ import Login from "./components/pages/login";
 import Data from "./Data";
 
 // import useState
-
 import { useState } from "react";
 
 function App() {
@@ -28,8 +30,14 @@ function App() {
     <div className="App">
       <Nav />
 
-      <Products data={data} />
-      <Login />
+      <Switch>
+        <Route path="/" exact>
+          <Products data={data} />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
     </div>
   );
 }

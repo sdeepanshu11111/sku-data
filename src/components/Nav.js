@@ -1,16 +1,24 @@
+// import routing link
+
+import { Link } from "react-router-dom";
+
 const Nav = () => {
   return (
     <nav>
       <h1>Sku Finder</h1>
       <ul>
         <li>
-          <a href="">Home</a>
+          <Link href="#" to="/">
+            Home
+          </Link>
         </li>
         <li>
           <a href="">About Us</a>
         </li>
         <li>
-          <a href="">Log In</a>
+          <Link href="#" to="/login">
+            Login
+          </Link>
         </li>
       </ul>
     </nav>
