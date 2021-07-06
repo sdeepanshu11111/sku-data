@@ -1,12 +1,19 @@
 // import singleProduct
 import SingleProduct from "./SingleProduct";
 
-const Products = ({ data }) => {
+// dropdown
+import Dropdown from "./Dropdown";
+
+const Products = ({ mainData, data, setData }) => {
   return (
     <div className="products">
-      {data.map((product) => (
-        <SingleProduct product={product} />
-      ))}
+      <Dropdown mainData={mainData} setData={setData} data={data} />
+
+      <div className="products-nest">
+        {data.map((product) => (
+          <SingleProduct product={product} />
+        ))}
+      </div>
     </div>
   );
 };

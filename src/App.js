@@ -22,6 +22,8 @@ import Data from "./Data";
 import { useState } from "react";
 
 function App() {
+  const [mainData, setMainData] = useState(Data);
+
   const [data, setData] = useState(Data);
 
   console.log(data);
@@ -32,7 +34,7 @@ function App() {
 
       <Switch>
         <Route path="/" exact>
-          <Products data={data} />
+          <Products mainData={mainData} setData={setData} data={data} />
         </Route>
         <Route path="/login">
           <Login />

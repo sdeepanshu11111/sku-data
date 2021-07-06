@@ -7,10 +7,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0rem 9rem 0rem 9rem;
-  background-color: #282828;
+  background-color: #fff;
 
   h1 {
-    color: white;
+    color: gray;
     font-size: 0.9rem;
     width: 30%;
   }
@@ -27,7 +27,7 @@ nav {
 
     a {
       text-decoration: none;
-      color: white;
+      color: gray;
       font-size: 0.8rem;
     }
   }
