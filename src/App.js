@@ -33,7 +33,7 @@ function App() {
       <Nav />
 
       <Switch>
-        <Route path="sku-data/" exact>
+        <Route path="/sku-data" exact>
           <Products mainData={mainData} setData={setData} data={data} />
         </Route>
         <Route path="/login">
