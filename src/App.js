@@ -36,7 +36,7 @@ function App() {
 
           <Products mainData={mainData} setData={setData} data={data} />
         </Route>
-        <Route path="/login">
+        <Route path="/login" exact>
           <Login />
         </Route>
       </Switch>
