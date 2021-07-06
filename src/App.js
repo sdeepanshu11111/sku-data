@@ -36,7 +36,7 @@ function App() {
 
           <Products mainData={mainData} setData={setData} data={data} />
         </Route>
-        <Route path="/sku-data/login">
+        <Route path="/login">
           <Login />
         </Route>
       </Switch>
