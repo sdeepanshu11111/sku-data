@@ -30,13 +30,13 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-
       <Switch>
         <Route path="/sku-data" exact>
+          <Nav />
+
           <Products mainData={mainData} setData={setData} data={data} />
         </Route>
-        <Route path="/login">
+        <Route path="/sku-data/login">
           <Login />
         </Route>
       </Switch>

@@ -1,7 +1,8 @@
 .login-container {
   font-family: "Inter", sans-serif;
   display: flex;
-  min-height: 88vh;
+  overflow: hidden;
+  min-height: 100vh;
 
   .login-left {
     width: 70%;
@@ -22,6 +23,7 @@
     .down {
       // background-color: aquamarine;
       width: 100%;
+
       // background-color: gray;
 
       h1 {
