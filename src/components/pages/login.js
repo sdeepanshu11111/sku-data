@@ -6,6 +6,8 @@ import { TextField, Button } from "@material-ui/core";
 
 import LeftImage from "./images/login_left.jpg";
 
+import LoginRight from "./images/login_right.png";
+
 const Login = () => {
   return (
     <div className="login-container">
@@ -14,7 +16,7 @@ const Login = () => {
       </div>
       <div className="login-right">
         <div className="up">
-          <img src="" alt="" />
+          <img src={LoginRight} alt="" />
         </div>
         <div className="down">
           <h1>Login</h1>
