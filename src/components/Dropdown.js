@@ -3,7 +3,13 @@ import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import NativeSelect from "@material-ui/core/NativeSelect";
 
-const DropdownMenu = ({ mainData, data, setData }) => {
+const DropdownMenu = ({
+  mainData,
+  data,
+  setSearchState,
+  setMainData,
+  setData,
+}) => {
   // Categoryhandler
   const categoryHandler = (e) => {
     if (e.target.value === "All") {
@@ -13,6 +19,7 @@ const DropdownMenu = ({ mainData, data, setData }) => {
         return f.mainCategory === e.target.value;
       });
 
+      setSearchState(filterData);
       return setData(filterData);
     }
   };

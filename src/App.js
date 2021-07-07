@@ -26,6 +26,8 @@ function App() {
 
   const [data, setData] = useState(Data);
 
+  const [searchState, setSearchState] = useState(Data);
+
   console.log(data);
 
   return (
@@ -34,7 +36,14 @@ function App() {
         <Route path="/sku-data" exact>
           <Nav />
 
-          <Products mainData={mainData} setData={setData} data={data} />
+          <Products
+            mainData={mainData}
+            searchState={searchState}
+            setSearchState={setSearchState}
+            setMainData={setMainData}
+            setData={setData}
+            data={data}
+          />
         </Route>
         <Route path="/login" exact>
           <Login />
