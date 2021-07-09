@@ -6,7 +6,17 @@ import SearchBar from "./SearchBar";
 // dropdown
 import Dropdown from "./Dropdown";
 
-const Products = ({ mainData, searchState, setSearchState, data, setData }) => {
+const Products = ({
+  mainData,
+  searchState,
+  setSearchState,
+  data,
+  setData,
+  setActiveCategory,
+  setSearchValue,
+  searchValue,
+  activeCategory,
+}) => {
   return (
     <div className="products">
       <div className="search-container">
@@ -15,12 +25,18 @@ const Products = ({ mainData, searchState, setSearchState, data, setData }) => {
           setSearchState={setSearchState}
           setData={setData}
           data={data}
+          setActiveCategory={setActiveCategory}
+          searchValue={searchValue}
+          activeCategory={activeCategory}
         />
         <SearchBar
           searchState={searchState}
           mainData={mainData}
           setData={setData}
           data={data}
+          setSearchValue={setSearchValue}
+          searchValue={searchValue}
+          activeCategory={activeCategory}
         />
       </div>
 

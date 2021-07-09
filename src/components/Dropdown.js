@@ -9,18 +9,47 @@ const DropdownMenu = ({
   setSearchState,
   setMainData,
   setData,
+  setActiveCategory,
+  searchValue,
+  activeCategory,
 }) => {
   // Categoryhandler
   const categoryHandler = (e) => {
-    if (e.target.value === "All") {
-      return setData(mainData);
-    } else {
-      let filterData = mainData.filter((f) => {
-        return f.mainCategory === e.target.value;
-      });
+    setActiveCategory(e.target.value);
+    console.log(e.target.value);
 
-      setSearchState(filterData);
-      return setData(filterData);
+    if (searchValue == undefined) {
+      if (e.target.value === "All") {
+        setData(mainData);
+      } else {
+        let filterData = mainData.filter((f) => {
+          return f.mainCategory === e.target.value;
+        });
+
+        setData(filterData);
+      }
+    } else {
+      if (e.target.value === "All") {
+        let filterData = mainData.filter((f) => {
+          if (f.name.indexOf(searchValue) !== -1) {
+            return f;
+          }
+        });
+
+        setData(filterData);
+      } else {
+        let filterData = mainData.filter((f) => {
+          return f.mainCategory === e.target.value;
+        });
+
+        let filterData2 = filterData.filter((f) => {
+          if (f.name.indexOf(searchValue) !== -1) {
+            return f;
+          }
+        });
+
+        setData(filterData2);
+      }
     }
   };
 

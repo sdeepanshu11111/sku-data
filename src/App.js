@@ -28,7 +28,9 @@ function App() {
 
   const [searchState, setSearchState] = useState(Data);
 
-  console.log(data);
+  const [activeCategory, setActiveCategory] = useState();
+
+  const [searchValue, setSearchValue] = useState();
 
   return (
     <div className="App">
@@ -43,6 +45,10 @@ function App() {
             setMainData={setMainData}
             setData={setData}
             data={data}
+            activeCategory={activeCategory}
+            searchValue={searchValue}
+            setActiveCategory={setActiveCategory}
+            setSearchValue={setSearchValue}
           />
         </Route>
         <Route path="/login" exact>
