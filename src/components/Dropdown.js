@@ -66,6 +66,11 @@ const DropdownMenu = ({
           <option value={"Restaurant"}>Restaurant</option>
           <option value={"Dairy"}>Dairy</option>
           <option value={"Bakery"}>Bakery</option>
+          <option value={"Gym and Supplements"}>Gym and Supplements</option>
+          <option value={"Furniture"}>Furniture</option>
+          <option value={"Paint Shop"}>Paint Shop</option>
+          <option value={"Apparel"}>Apparel</option>
+          <option value={"Car Accessories"}>Car Accessories</option>
         </NativeSelect>
       </FormControl>
     </div>
