@@ -17,13 +17,15 @@
     align-items: center;
     width: 30%;
     height: 100%;
+    padding-left: 1rem;
     img {
       background-size: cover;
       background-position: center;
 
       width: 100%;
       display: block;
-      border-radius: 35%;
+      border-radius: 50%;
+      box-shadow: -1px -3px 20px 0px #d5d0d0;
     }
   }
 
