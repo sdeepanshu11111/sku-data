@@ -23,7 +23,7 @@ const SearchBar = ({
 
     setSearchValue(val);
 
-    if (val && (activeCategory == undefined || activeCategory === "All")) {
+    if (val && (activeCategory === undefined || activeCategory === "All")) {
       let filterData = mainData.filter((f) => {
         if (f.name.indexOf(val) !== -1) {
           return f;
