@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 @import "./LogIn";
 @import "./nav";
 @import "./products/";
